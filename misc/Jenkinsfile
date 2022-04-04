@@ -16,4 +16,5 @@ node {
        def app = docker.build("nbeites/nodejs-demo-example:${commit_id}", '.').push()
      }
    }
+   step([$class: 'CordellWalkerRecorder']): Activate Chuck
 }
